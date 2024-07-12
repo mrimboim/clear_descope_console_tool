@@ -18,7 +18,7 @@ from descope import (
 
 load_dotenv()
 DESCOPE_PROJECT_ID = os.getenv("DESCOPE_PROJECT_ID")
-DESCOPE_MANAGEMENT_KEY = os.getenv("DESCOPE_MANAGMENT_KEY")
+DESCOPE_MANAGEMENT_KEY = os.getenv("DESCOPE_MANAGEMENT_KEY")
 
 try:
     descope_client = DescopeClient(
@@ -151,14 +151,6 @@ def main():
     for role in roles:
         descope_client.mgmt.role.delete(role["name"])
     
-
-  
-
-
-
-
-
-
 
 if __name__ == "__main__":
     main()
