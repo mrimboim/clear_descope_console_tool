@@ -1,0 +1,3 @@
+requests
+descope
+python-dotenv
